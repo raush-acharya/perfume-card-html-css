@@ -1,0 +1,124 @@
+`html{
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    --viridian: #3d7d65ff;
+    --linen: #f3eae3ff;
+    --viridian-2: #3d8168ff;
+    --white: #ffffffff;
+    background-color: var(--linen);
+    font-size: 14px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_card{
+    background-color: var(--white);
+    display: flex;
+    width: 66.67vh;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+
+
+.card{
+    padding: 30px;
+}
+
+.perfume{
+    letter-spacing: 5px;
+    
+}
+
+.header, .price{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.money{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.price{
+    color: var(--viridian);
+}
+
+.discount{
+    align-self: center;
+    text-decoration: line-through;
+    
+}
+
+
+.dancing{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.Montserrat{
+    font-family: 'Montserrat', sans-serif;
+    color: #8b8b8b;
+
+}
+
+button{
+    background-color: #3d7d65ff;
+    width:100%;
+    height: fit-content;
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-left: 80px;
+    cursor: pointer;;
+}
+button:hover{
+    background-color: rgb(41, 85, 69);
+}
+
+@media screen and (min-width: 375px) {
+    .mobile_only{
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    /* *{
+        margin: 5px;
+    } */
+    .desktop_only{
+        display: none;
+    }
+    .mobile_only{
+        display: inline;
+        width: 90vw;
+        height: fit-content;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .main_card{
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 90vh;
+        border-radius: 10px;
+    }
+    .card{
+        /* display: inline; */
+        padding: 20 px;
+    }
+    .header, .price{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
+}
